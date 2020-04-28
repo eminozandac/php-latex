@@ -101,6 +101,7 @@ class PhpLatex_Parser
             'numArgs' => isset($options['numArgs']) ? intval($options['numArgs']) : 0,
             'numOptArgs' => isset($options['numOptArgs']) ? intval($options['numOptArgs']) : 0,
             'parseArgs' => !isset($options['parseArgs']) || $options['parseArgs'], // parse by default
+            'starred' => $options['starred'] ?? 0 ,
         );
         return $this;
     } // }}}
